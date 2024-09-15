@@ -1,0 +1,17 @@
+html, body {
+    height: 100%; /* Ensure the html and body take up full height */
+    margin: 0;    /* Remove default margin */
+    overflow: hidden; /* Disable scrolling */
+    background-color: wheat;
+    
+}
+
+.homepage-container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    gap: 20px; /* Add space between the sidebar and main content */
+    box-sizing: border-box; /* Ensure padding is included in the total width and height */
+}
+
+

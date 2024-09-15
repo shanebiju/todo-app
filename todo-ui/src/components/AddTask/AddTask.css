@@ -1,0 +1,24 @@
+.add-task-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    width: 250px; /* Set fixed width */
+    height: 200px; /* Set fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .add-task-card img{
+    width: 50px;
+    height: 50px;
+  }
+  .add-task-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

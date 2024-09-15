@@ -1,0 +1,91 @@
+.sidebar {
+    background-color: #808080;
+    width: 350px; /* Set the width of the sidebar */
+    max-height: 100vh; /* Set the maximum height to the viewport height */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Ensure all items are stacked vertically */
+    justify-content: space-between; /* Space elements evenly, placing button at bottom */
+    overflow-y: auto; /* Make sidebar scrollable if content overflows */
+    overflow-x: hidden;
+}
+
+.user-info {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Add space between image and text */
+}
+
+.user-name{
+   margin-top: 15px;
+   word-wrap: break-word; /* Allow breaking the text to fit into the container */
+   white-space: normal; /* Allow text to wrap into multiple lines */
+}
+.welcome-msg{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.name {
+    margin-top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.task-categories {
+    flex-grow: 1; /* Allow task categories to take up remaining space */
+    display: flex;
+    flex-direction: column; /* Ensure task categories are stacked vertically */
+    gap: 15px; /* Space between task categories */
+    justify-content: center; /* Center task categories vertically */
+}
+
+.task-categories h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #fff; /* Background color for better visibility */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+.task-link {
+    text-decoration: none;
+    color: inherit; /* Inherit the color of the parent element */
+}
+
+.task-link h3 {
+    transition: color 0.3s;
+}
+
+.task-link h3:hover {
+    color: #fff; /* Change to any color you prefer */
+}
+
+.task-categories h3:hover {
+    background-color:#555; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.task-link.active h3 {
+    background-color: black; /* Background color for active link */
+    color: #fff; /* Text color for active link */
+}
+
+button {
+    width: 100%; /* Make button full width */
+    padding: 15px;
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+button:hover {
+    background-color: #555; /* Darken button on hover */
+}

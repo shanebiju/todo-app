@@ -1,0 +1,22 @@
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust card width */
+    /* Space between cards */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow it to grow and take remaining space */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    position: relative;
+  }
+
+  .no-data-message{
+    position: absolute;
+    top: 40%;
+    left: 32.5%;
+    color: grey;
+  }
+  
+  
