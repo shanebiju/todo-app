@@ -14,7 +14,6 @@ const login = () => {
         console.log(email,password);
         await login(email,password);
     }
-    console.log(error);
     // if (isLoading){
     //     return <div>
     //         loading...

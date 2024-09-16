@@ -13,10 +13,6 @@ const signup = () => {
         e.preventDefault()
         console.log(email,password);
         await signup(email,password)
-        if(!error){
-          navigate('/login')
-        }
-        
     }
   return (
     <div className='login-wrapper'>
